@@ -1041,12 +1041,10 @@ section{margin:0!important;}
 </head>
 
 <body>
-
-<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top py-3">
   <div class="container-fluid px-5">
 
-    <!-- Logo + Menu together -->
+    <!-- Left: Logo + Menu -->
     <div class="d-flex align-items-center gap-5">
 
       <!-- Logo -->
@@ -1054,7 +1052,7 @@ section{margin:0!important;}
         <img src="logo.webp" height="34" alt="OneLot">
       </a>
 
-      <!-- Menu -->
+      <!-- Menu (Desktop only) -->
       <ul class="navbar-nav d-none d-lg-flex gap-4">
         <li class="nav-item">
           <a class="nav-link active-link" href="#">Home</a>
@@ -1078,20 +1076,40 @@ section{margin:0!important;}
           <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
-
     </div>
 
-    <!-- Right side -->
-    <div class="d-flex align-items-center gap-4">
+    <!-- Right: Login + Button (Desktop only) -->
+    <div class="d-none d-lg-flex align-items-center gap-4">
       <a href="#" class="login-link">Log In</a>
       <a href="#" class="btn inquire-btn">Inquire now</a>
     </div>
 
-    <!-- Mobile toggle -->
-    <button class="navbar-toggler d-lg-none" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+    <!-- Hamburger (Mobile only) -->
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mobileMenu"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+  </div>
 
+  <!-- Mobile Menu -->
+  <div class="collapse d-lg-none" id="mobileMenu">
+    <div class="bg-white border-top p-4">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+
+      <div class="mt-4 d-flex flex-column gap-3">
+        <a href="#" class="login-link">Log In</a>
+        <a href="#" class="btn inquire-btn">Inquire now</a>
+      </div>
+    </div>
   </div>
 </nav>
 
