@@ -609,7 +609,7 @@ h6.fw-semibold{
 
 .stay-connect{
   text-align:center;
-  padding:90px 20px 110px;
+  padding:9px 2px 50px;
   background:#fff;
   font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
 }
@@ -999,6 +999,43 @@ section{margin:0!important;}
   }
 }
 
+/* Small devices (mobile) */
+@media (max-width: 991.98px) {
+  /* Stack the columns vertically */
+  .bg-saas .row,
+  .bg-light .row {
+    flex-direction: column !important;
+    text-align: center; /* optional: center text on mobile */
+  }
+
+  /* Reorder the elements: text first, button, image last */
+  .bg-saas .col-lg-6:first-child,
+  .bg-light .col-lg-6:last-child {
+    order: 2; /* image comes last */
+  }
+
+  .bg-saas .col-lg-6:last-child,
+  .bg-light .col-lg-6:first-child {
+    order: 1; /* text comes first */
+  }
+
+  /* Center button */
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  /* Adjust image width */
+  .img-fluid {
+    max-width: 80%;
+    margin: 1rem auto 0 auto;
+  }
+
+  /* Optional: adjust padding/margin */
+  .ps-lg-5 {
+    padding-left: 0 !important;
+  }
+}
 
 </style>
 </head>
